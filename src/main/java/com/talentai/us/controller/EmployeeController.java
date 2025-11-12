@@ -22,7 +22,7 @@ import java.util.List;
 @AllArgsConstructor
 @Validated
 public class EmployeeController {
-    private EmployeeService employeeService;
+   /* private EmployeeService employeeService;
     private AddressService addressService;
 
     @GetMapping("/employees")
@@ -40,6 +40,11 @@ public class EmployeeController {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(new ResponseDto(EmployeeConstants.STATUS_201, EmployeeConstants.MESSAGE_201));
-    }
+    }*/
 
+    @GetMapping("/hi")
+    public String sayHi()
+    {
+        return "Hellow!";
+    }
 }
