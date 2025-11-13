@@ -4,7 +4,7 @@ spring:
   profiles:
     active: qa
   config:
-    import: "configserver:http://localhost:8071/"
+    import: "optional:configserver:http://localhost:8071"
   datasource:
     url: jdbc:mysql://localhost:3306/talent_db?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
     username: root
